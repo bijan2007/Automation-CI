@@ -22,7 +22,7 @@ import appModules.Logout_Action;
 public class Validate_LoginAndLogout {
 	
 public WebDriver driver;
-    @BeforeMethod
+
 	@BeforeTest
     public void setUp() {
     	ChromeDriverManager.getInstance().setup();

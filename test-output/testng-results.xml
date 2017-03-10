@@ -1,101 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="20" passed="20">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="110076" started-at="2017-03-09T18:07:58Z" finished-at="2017-03-09T18:09:48Z">
+  <suite name="Default suite" duration-ms="31554" started-at="2017-03-10T14:21:31Z" finished-at="2017-03-10T14:22:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="110076" started-at="2017-03-09T18:07:58Z" finished-at="2017-03-09T18:09:48Z">
-      <class name="testCases.Validate_FinancialAssessmentFields">
-        <test-method status="PASS" signature="launchApplication()[pri:0, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="launchApplication" is-config="true" duration-ms="14610" started-at="2017-03-09T23:37:58Z" finished-at="2017-03-09T23:38:12Z">
+    <test name="Default test" duration-ms="31554" started-at="2017-03-10T14:21:31Z" finished-at="2017-03-10T14:22:02Z">
+      <class name="testCases.Validate_LoginAndLogout">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.Validate_LoginAndLogout@5649fd9b]" name="setUp" is-config="true" duration-ms="11107" started-at="2017-03-10T19:51:31Z" finished-at="2017-03-10T19:51:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Login" duration-ms="39880" started-at="2017-03-09T23:38:12Z" finished-at="2017-03-09T23:38:52Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="A_Launch()[pri:0, instance:testCases.Validate_LoginAndLogout@5649fd9b]" name="A_Launch" duration-ms="248" started-at="2017-03-10T19:51:42Z" finished-at="2017-03-10T19:51:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="NavigateToFinancialAssessmentPage()[pri:1, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="NavigateToFinancialAssessmentPage" duration-ms="30462" started-at="2017-03-09T23:38:52Z" finished-at="2017-03-09T23:39:23Z">
+        </test-method> <!-- A_Launch -->
+        <test-method status="PASS" signature="B_Login()[pri:0, instance:testCases.Validate_LoginAndLogout@5649fd9b]" name="B_Login" duration-ms="14842" started-at="2017-03-10T19:51:42Z" finished-at="2017-03-10T19:51:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NavigateToFinancialAssessmentPage -->
-        <test-method status="PASS" signature="Test_ForexTradingExperience()[pri:2, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_ForexTradingExperience" duration-ms="3518" started-at="2017-03-09T23:39:23Z" finished-at="2017-03-09T23:39:26Z">
+        </test-method> <!-- B_Login -->
+        <test-method status="PASS" signature="C_Logout()[pri:0, instance:testCases.Validate_LoginAndLogout@5649fd9b]" name="C_Logout" duration-ms="5114" started-at="2017-03-10T19:51:57Z" finished-at="2017-03-10T19:52:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_ForexTradingExperience -->
-        <test-method status="PASS" signature="Test_ForexTradingFrequency()[pri:3, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_ForexTradingFrequency" duration-ms="1409" started-at="2017-03-09T23:39:26Z" finished-at="2017-03-09T23:39:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_ForexTradingFrequency -->
-        <test-method status="PASS" signature="Test_IndicesTradingExperience()[pri:4, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_IndicesTradingExperience" duration-ms="1293" started-at="2017-03-09T23:39:28Z" finished-at="2017-03-09T23:39:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_IndicesTradingExperience -->
-        <test-method status="PASS" signature="Test_IndicesTradingFrequency()[pri:5, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_IndicesTradingFrequency" duration-ms="1212" started-at="2017-03-09T23:39:29Z" finished-at="2017-03-09T23:39:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_IndicesTradingFrequency -->
-        <test-method status="PASS" signature="Test_CommoditiesTradingExperience()[pri:6, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_CommoditiesTradingExperience" duration-ms="1210" started-at="2017-03-09T23:39:30Z" finished-at="2017-03-09T23:39:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_CommoditiesTradingExperience -->
-        <test-method status="PASS" signature="Test_CommoditiesTradingFrequency()[pri:7, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_CommoditiesTradingFrequency" duration-ms="1177" started-at="2017-03-09T23:39:31Z" finished-at="2017-03-09T23:39:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_CommoditiesTradingFrequency -->
-        <test-method status="PASS" signature="Test_StocksTradingExperience()[pri:8, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_StocksTradingExperience" duration-ms="1212" started-at="2017-03-09T23:39:32Z" finished-at="2017-03-09T23:39:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_StocksTradingExperience -->
-        <test-method status="PASS" signature="Test_StocksTradingFrequency()[pri:9, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_StocksTradingFrequency" duration-ms="1234" started-at="2017-03-09T23:39:34Z" finished-at="2017-03-09T23:39:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_StocksTradingFrequency -->
-        <test-method status="PASS" signature="Test_OtherTradingExperience()[pri:10, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_OtherTradingExperience" duration-ms="1206" started-at="2017-03-09T23:39:35Z" finished-at="2017-03-09T23:39:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_OtherTradingExperience -->
-        <test-method status="PASS" signature="Test_OtherTradingFrequency()[pri:11, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_OtherTradingFrequency" duration-ms="1223" started-at="2017-03-09T23:39:36Z" finished-at="2017-03-09T23:39:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_OtherTradingFrequency -->
-        <test-method status="PASS" signature="Test_OtherDerivatiesTradingExperience()[pri:12, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_OtherDerivatiesTradingExperience" duration-ms="1300" started-at="2017-03-09T23:39:37Z" finished-at="2017-03-09T23:39:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_OtherDerivatiesTradingExperience -->
-        <test-method status="PASS" signature="Test_OtherDerivatiesTradingFrequency()[pri:13, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_OtherDerivatiesTradingFrequency" duration-ms="1180" started-at="2017-03-09T23:39:39Z" finished-at="2017-03-09T23:39:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_OtherDerivatiesTradingFrequency -->
-        <test-method status="PASS" signature="Test_IndustryEmployment()[pri:14, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_IndustryEmployment" duration-ms="1146" started-at="2017-03-09T23:39:40Z" finished-at="2017-03-09T23:39:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_IndustryEmployment -->
-        <test-method status="PASS" signature="Test_Occupation()[pri:15, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_Occupation" duration-ms="1245" started-at="2017-03-09T23:39:41Z" finished-at="2017-03-09T23:39:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_Occupation -->
-        <test-method status="PASS" signature="Test_Education()[pri:16, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_Education" duration-ms="1180" started-at="2017-03-09T23:39:42Z" finished-at="2017-03-09T23:39:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_Education -->
-        <test-method status="PASS" signature="Test_IncomeSource()[pri:17, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_IncomeSource" duration-ms="1015" started-at="2017-03-09T23:39:43Z" finished-at="2017-03-09T23:39:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_IncomeSource -->
-        <test-method status="PASS" signature="Test_AnnualIncome()[pri:18, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_AnnualIncome" duration-ms="1607" started-at="2017-03-09T23:39:44Z" finished-at="2017-03-09T23:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_AnnualIncome -->
-        <test-method status="PASS" signature="Test_NetWorth()[pri:19, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="Test_NetWorth" duration-ms="1198" started-at="2017-03-09T23:39:46Z" finished-at="2017-03-09T23:39:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_NetWorth -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:testCases.Validate_FinancialAssessmentFields@6adede5]" name="endSession" is-config="true" duration-ms="505" started-at="2017-03-09T23:39:47Z" finished-at="2017-03-09T23:39:48Z">
+        </test-method> <!-- C_Logout -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:testCases.Validate_LoginAndLogout@5649fd9b]" name="endSession" is-config="true" duration-ms="217" started-at="2017-03-10T19:52:02Z" finished-at="2017-03-10T19:52:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- testCases.Validate_FinancialAssessmentFields -->
+      </class> <!-- testCases.Validate_LoginAndLogout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

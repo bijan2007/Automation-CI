@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.Validate_SetFinancialAssessment">
+      <class name="testCases.Validate_LoginAndLogout">
         <methods>
-          <include name="C_Set_FinancialAssessment"/>
-          <include name="launchApplication"/>
+          <include name="C_Logout"/>
+          <include name="setUp"/>
           <include name="endSession"/>
         </methods>
-      </class> <!-- testCases.Validate_SetFinancialAssessment -->
+      </class> <!-- testCases.Validate_LoginAndLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

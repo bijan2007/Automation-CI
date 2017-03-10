@@ -30,7 +30,7 @@ public class MainAccount_Menu {
 		}
 		public static WebElement link_MainAccount(WebDriver driver){
 			WebDriverWait wait = new WebDriverWait(driver,30);
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='main-account']/li/a")));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='main-logout']")));
 			return element;
 		}
 		
