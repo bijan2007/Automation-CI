@@ -15,7 +15,7 @@ Set Financial Assessment
 Validate fields in Financial Assessment form
 Running the tests:
 
-Project can be cloned/downloaded from github url https://github.com/bijan2007/AutomationFramework.git
+Project can be cloned/downloaded from github url https://github.com/bijan2007/Automation-CI.git
 
 Each test will be automatically triggered by Travis CI upon each code push to the repository and status can be viewed at the below url:
 https://travis-ci.org/bijan2007/Automation-CI/builds
