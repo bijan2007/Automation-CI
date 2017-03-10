@@ -1,5 +1,11 @@
 # Automation-CI
-This is a sample test automation framework which can run on any browser. It is based on page-objects model and is developed using Selenium Webdriver, TestNG and Maven.
+This is a sample test automation framework which can run on any browser. Framework is built upon the following:
+- Selenium Webdriver
+- Page Object Model
+- JAVA
+- TestNG
+- Maven for Project Build
+- Travis CI for continuous integration
 
 Currently the following tests are covered for Binary site:
 
@@ -11,4 +17,5 @@ Running the tests:
 
 Project can be cloned/downloaded from github url https://github.com/bijan2007/AutomationFramework.git
 
-Each test will be triggered by Travis CI
+Each test will be automatically triggered by Travis CI upon each code push to the repository and status can be viewed at the below url:
+https://travis-ci.org/bijan2007/Automation-CI/builds
