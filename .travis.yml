@@ -9,7 +9,7 @@ addons:
     packages:
       - google-chrome-stable
       
-script: mvn test -B
+script: phantomjs mvn test -B
 
 before_install:
  - sudo apt-get update

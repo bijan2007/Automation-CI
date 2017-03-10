@@ -3,12 +3,15 @@ package testCases;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
+
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.PhantomJsDriverManager;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -25,8 +28,10 @@ public WebDriver driver;
 
 	@BeforeTest
     public void setUp() {
-    	ChromeDriverManager.getInstance().setup();
-    	driver = new ChromeDriver();   
+    	//ChromeDriverManager.getInstance().setup();
+    	//driver = new ChromeDriver(); 
+		PhantomJsDriverManager.getInstance().setup();
+		driver = new PhantomJSDriver();
     	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.get(Constant.URL);
     	}
