@@ -28,11 +28,9 @@ public WebDriver driver;
 
 	@BeforeTest
     public void setUp() {
-    	//ChromeDriverManager.getInstance().setup();
-    	//driver = new ChromeDriver(); 
-		PhantomJsDriverManager.getInstance().setup();
-		driver = new PhantomJSDriver();
-    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    	ChromeDriverManager.getInstance().setup();
+    	driver = new ChromeDriver(); 
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(Constant.URL);
     	}
 	 

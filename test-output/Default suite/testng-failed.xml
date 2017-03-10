@@ -6,8 +6,9 @@
       <class name="testCases.Validate_LoginAndLogout">
         <methods>
           <include name="C_Logout"/>
+          <include name="A_Launch"/>
           <include name="setUp"/>
-          <include name="endSession"/>
+          <include name="B_Login"/>
         </methods>
       </class> <!-- testCases.Validate_LoginAndLogout -->
     </classes>

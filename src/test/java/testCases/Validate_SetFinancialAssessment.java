@@ -49,7 +49,7 @@ public class Validate_SetFinancialAssessment {
 	  public void launchApplication() {
 		 	ChromeDriverManager.getInstance().setup();
 	    	driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(Constant.URL);
 	  }
 
