@@ -1,5 +1,5 @@
 # Automation-CI
-<b>This is a test automation framework which uses the following concepts/tools to automate pages on the binary site:</b>
+<b>This is a test automation framework which uses the following concepts/tools to automate tests on the Binary site:</b>
 - Selenium Webdriver
 - Page Object Model
 - JAVA
@@ -15,8 +15,11 @@
 - Validate fields in Financial Assessment form
 
 <b>Running the tests:</b>
+
 Project can be cloned/downloaded from github url https://github.com/bijan2007/Automation-CI.git.
-Each test will be automatically triggered by Travis CI upon each code push to the repository and build status can be viewed at the below url: https://travis-ci.org/bijan2007/Automation-CI/builds
+
+Each test will be automatically triggered by Travis CI upon each code push to the repository and build status can be viewed at the below url: https://travis-ci.org/bijan2007/Automation-CI/builds.
 
 <b>Browsers:</b>
-Currently tests are running against Chrome Headless Browser - xvfb (X Virtual Framebuffer) provided by Travis CI
+
+Currently tests are running on Chrome Headless Browser using xvfb (X Virtual Framebuffer) provided by Travis CI.
