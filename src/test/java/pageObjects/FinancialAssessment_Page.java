@@ -7,12 +7,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FinancialAssessment_Page {
-	
 	private static WebElement element = null;
-
+	//driver is being passed an argument so that selenium is able to locate the element on the browser
 	public static WebElement select_ForexTradingExperience(WebDriver driver){
+		//driver will wait for the element to be clickable before performing any action
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.id("forex_trading_experience")));
+		//element is returned so that an action can be performed in it
 		return element;
 	}
 	public static WebElement select_ForexTradingFrequency(WebDriver driver){

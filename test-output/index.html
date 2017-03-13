@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,31 +91,125 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">20 methods, 1 failed,   19 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_LoginAndLogout" hash-for-method="A_Launch">A_Launch</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_IncomeSource">Test_IncomeSource</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_LoginAndLogout" hash-for-method="B_Login">B_Login</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="NavigateToFinancialAssessmentPage">NavigateToFinancialAssessmentPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_LoginAndLogout" hash-for-method="C_Logout">C_Logout</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_AnnualIncome">Test_AnnualIncome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_CommoditiesTradingExperience">Test_CommoditiesTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_CommoditiesTradingFrequency">Test_CommoditiesTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_Education">Test_Education</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_ForexTradingExperience">Test_ForexTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_ForexTradingFrequency">Test_ForexTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_IndicesTradingExperience">Test_IndicesTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_IndicesTradingFrequency">Test_IndicesTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_IndustryEmployment">Test_IndustryEmployment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_NetWorth">Test_NetWorth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_Occupation">Test_Occupation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_OtherDerivatiesTradingExperience">Test_OtherDerivatiesTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_OtherDerivatiesTradingFrequency">Test_OtherDerivatiesTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_OtherTradingExperience">Test_OtherTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_OtherTradingFrequency">Test_OtherTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_StocksTradingExperience">Test_StocksTradingExperience</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.Validate_FinancialAssessmentFields" hash-for-method="Test_StocksTradingFrequency">Test_StocksTradingFrequency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,109 +221,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testCases.Validate_LoginAndLogout</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.Validate_FinancialAssessmentFields</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="A_Launch">
-                  </a> <!-- A_Launch -->
-                  <span class="method-name">A_Launch</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:105)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:95)
-	at testCases.Validate_LoginAndLogout.setUp(Validate_LoginAndLogout.java:34)
+                  <a name="Test_IncomeSource">
+                  </a> <!-- Test_IncomeSource -->
+                  <span class="method-name">Test_IncomeSource</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: .//*[@id=&apos;frm_assessment&apos;]/fieldset[1]/div[16]/div[2]/div (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
+System info: host: &apos;Bijans-MacBook-Pro.local&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;1.8.0_74&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/jx/jyttrk393dz8l879jb62l00r0000gn/T/.org.chromium.Chromium.nSozu1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1275efac59385f3d07c1f3c127093abd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at pageObjects.FinancialAssessment_Page.error_IncomeSource(FinancialAssessment_Page.java:196)
+	at testCases.Validate_FinancialAssessmentFields.Test_IncomeSource(Validate_FinancialAssessmentFields.java:201)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="B_Login">
-                  </a> <!-- B_Login -->
-                  <span class="method-name">B_Login</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:105)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:95)
-	at testCases.Validate_LoginAndLogout.setUp(Validate_LoginAndLogout.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="C_Logout">
-                  </a> <!-- C_Logout -->
-                  <span class="method-name">C_Logout</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.os.CommandLine.find(Ljava/lang/String;)Ljava/lang/String;
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.findPhantomJS(PhantomJSDriverService.java:232)
-	at org.openqa.selenium.phantomjs.PhantomJSDriverService.createDefaultService(PhantomJSDriverService.java:181)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:105)
-	at org.openqa.selenium.phantomjs.PhantomJSDriver.&lt;init&gt;(PhantomJSDriver.java:95)
-	at testCases.Validate_LoginAndLogout.setUp(Validate_LoginAndLogout.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
-	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
@@ -248,11 +272,152 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.Validate_FinancialAssessmentFields</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateToFinancialAssessmentPage">
+                  </a> <!-- NavigateToFinancialAssessmentPage -->
+                  <span class="method-name">NavigateToFinancialAssessmentPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_AnnualIncome">
+                  </a> <!-- Test_AnnualIncome -->
+                  <span class="method-name">Test_AnnualIncome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_CommoditiesTradingExperience">
+                  </a> <!-- Test_CommoditiesTradingExperience -->
+                  <span class="method-name">Test_CommoditiesTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_CommoditiesTradingFrequency">
+                  </a> <!-- Test_CommoditiesTradingFrequency -->
+                  <span class="method-name">Test_CommoditiesTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Education">
+                  </a> <!-- Test_Education -->
+                  <span class="method-name">Test_Education</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_ForexTradingExperience">
+                  </a> <!-- Test_ForexTradingExperience -->
+                  <span class="method-name">Test_ForexTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_ForexTradingFrequency">
+                  </a> <!-- Test_ForexTradingFrequency -->
+                  <span class="method-name">Test_ForexTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_IndicesTradingExperience">
+                  </a> <!-- Test_IndicesTradingExperience -->
+                  <span class="method-name">Test_IndicesTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_IndicesTradingFrequency">
+                  </a> <!-- Test_IndicesTradingFrequency -->
+                  <span class="method-name">Test_IndicesTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_IndustryEmployment">
+                  </a> <!-- Test_IndustryEmployment -->
+                  <span class="method-name">Test_IndustryEmployment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_NetWorth">
+                  </a> <!-- Test_NetWorth -->
+                  <span class="method-name">Test_NetWorth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Occupation">
+                  </a> <!-- Test_Occupation -->
+                  <span class="method-name">Test_Occupation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_OtherDerivatiesTradingExperience">
+                  </a> <!-- Test_OtherDerivatiesTradingExperience -->
+                  <span class="method-name">Test_OtherDerivatiesTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_OtherDerivatiesTradingFrequency">
+                  </a> <!-- Test_OtherDerivatiesTradingFrequency -->
+                  <span class="method-name">Test_OtherDerivatiesTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_OtherTradingExperience">
+                  </a> <!-- Test_OtherTradingExperience -->
+                  <span class="method-name">Test_OtherTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_OtherTradingFrequency">
+                  </a> <!-- Test_OtherTradingFrequency -->
+                  <span class="method-name">Test_OtherTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_StocksTradingExperience">
+                  </a> <!-- Test_StocksTradingExperience -->
+                  <span class="method-name">Test_StocksTradingExperience</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_StocksTradingFrequency">
+                  </a> <!-- Test_StocksTradingFrequency -->
+                  <span class="method-name">Test_StocksTradingFrequency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/jx/jyttrk393dz8l879jb62l00r0000gn/T/testng-eclipse-1670347244/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/jx/jyttrk393dz8l879jb62l00r0000gn/T/testng-eclipse--2065835589/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -261,7 +426,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Validate_LoginAndLogout&quot;/&gt;
+      &lt;class name=&quot;testCases.Validate_FinancialAssessmentFields&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -301,24 +466,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'A_Launch')
-data.setCell(0, 2, 'testCases.Validate_LoginAndLogout')
-data.setCell(0, 3, 3);
+data.setCell(0, 1, 'Test_IncomeSource')
+data.setCell(0, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(0, 3, 36774);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'B_Login')
-data.setCell(1, 2, 'testCases.Validate_LoginAndLogout')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(1, 3, 18604);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'C_Logout')
-data.setCell(2, 2, 'testCases.Validate_LoginAndLogout')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'NavigateToFinancialAssessmentPage')
+data.setCell(2, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(2, 3, 4516);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test_ForexTradingExperience')
+data.setCell(3, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(3, 3, 3473);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test_AnnualIncome')
+data.setCell(4, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(4, 3, 2520);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test_NetWorth')
+data.setCell(5, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(5, 3, 1685);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Test_OtherTradingFrequency')
+data.setCell(6, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(6, 3, 1364);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Test_OtherDerivatiesTradingExperience')
+data.setCell(7, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(7, 3, 1333);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Test_ForexTradingFrequency')
+data.setCell(8, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(8, 3, 1315);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Test_OtherDerivatiesTradingFrequency')
+data.setCell(9, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(9, 3, 1313);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Test_Education')
+data.setCell(10, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(10, 3, 1295);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Test_Occupation')
+data.setCell(11, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(11, 3, 1271);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Test_IndustryEmployment')
+data.setCell(12, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(12, 3, 1265);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Test_OtherTradingExperience')
+data.setCell(13, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(13, 3, 1262);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Test_CommoditiesTradingExperience')
+data.setCell(14, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(14, 3, 1261);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Test_IndicesTradingExperience')
+data.setCell(15, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(15, 3, 1233);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Test_StocksTradingFrequency')
+data.setCell(16, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(16, 3, 1233);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Test_IndicesTradingFrequency')
+data.setCell(17, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(17, 3, 1191);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Test_StocksTradingExperience')
+data.setCell(18, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(18, 3, 1177);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Test_CommoditiesTradingFrequency')
+data.setCell(19, 2, 'testCases.Validate_FinancialAssessmentFields')
+data.setCell(19, 3, 1162);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -344,25 +577,97 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Validate_LoginAndLogout</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Validate_FinancialAssessmentFields</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp</span>
+                <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">A_Launch</span>
-                <span class="method-start">8144 ms</span>
+                <span class="method-name">Login</span>
+                <span class="method-start">16345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">B_Login</span>
-                <span class="method-start">8149 ms</span>
+                <span class="method-name">NavigateToFinancialAssessmentPage</span>
+                <span class="method-start">34953 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">C_Logout</span>
-                <span class="method-start">8154 ms</span>
+                <span class="method-name">Test_ForexTradingExperience</span>
+                <span class="method-start">39472 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_ForexTradingFrequency</span>
+                <span class="method-start">42947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_IndicesTradingExperience</span>
+                <span class="method-start">44263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_IndicesTradingFrequency</span>
+                <span class="method-start">45498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_CommoditiesTradingExperience</span>
+                <span class="method-start">46691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_CommoditiesTradingFrequency</span>
+                <span class="method-start">47953 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_StocksTradingExperience</span>
+                <span class="method-start">49116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_StocksTradingFrequency</span>
+                <span class="method-start">50295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_OtherTradingExperience</span>
+                <span class="method-start">51529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_OtherTradingFrequency</span>
+                <span class="method-start">52793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_OtherDerivatiesTradingExperience</span>
+                <span class="method-start">54158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_OtherDerivatiesTradingFrequency</span>
+                <span class="method-start">55493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_IndustryEmployment</span>
+                <span class="method-start">56808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_Occupation</span>
+                <span class="method-start">58074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_Education</span>
+                <span class="method-start">59346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_IncomeSource</span>
+                <span class="method-start">60642 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_AnnualIncome</span>
+                <span class="method-start">97440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test_NetWorth</span>
+                <span class="method-start">99962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">endSession</span>
+                <span class="method-start">101648 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,7 +1,6 @@
 package appModules;
 
 import org.openqa.selenium.WebDriver;
-
 import pageObjects.Home_Page;
 import pageObjects.Login_Page;
 
@@ -13,7 +12,5 @@ public class Login_Action {
 		Login_Page.txt_Password(driver).clear();
 		Login_Page.txt_Password(driver).sendKeys(sPassword);
 		Login_Page.btn_Login(driver).click();
-		
 	}
-
 }

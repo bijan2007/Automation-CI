@@ -2,15 +2,11 @@ package testCases;
 
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import pageObjects.MainAccount_Menu;
 import pageObjects.FinancialAssessment_Page;
 import pageObjects.Profile_Page;
@@ -18,10 +14,8 @@ import utility.Constant;
 import appModules.Login_Action;
 import appModules.SetFinancialAssessment_Action;
 
-public class Validate_SetFinancialAssessment {
-	
+public class Validate_SetFinancialAssessment {	
 	public WebDriver driver;
-
 	@Test
 	public void A_Login() {
 		  	Login_Action.Execute(driver,Constant.Email,Constant.Password);
@@ -32,7 +26,6 @@ public class Validate_SetFinancialAssessment {
 			MainAccount_Menu.link_Profile(driver).click();
 			Profile_Page.link_FinancialAssessment(driver).click();
 	  }
-
 	 @Test
 	 public void C_Set_FinancialAssessment() {
 			SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
@@ -42,8 +35,7 @@ public class Validate_SetFinancialAssessment {
 					Constant.education, Constant.income_source, Constant.annual_income, Constant.net_worth);
 			if(FinancialAssessment_Page.msg_Success(driver).isDisplayed()){
 				System.out.println(FinancialAssessment_Page.msg_Success(driver).getText());
-			}
-			
+			}	
 	  }
 	 @BeforeTest
 	  public void launchApplication() {
@@ -52,11 +44,8 @@ public class Validate_SetFinancialAssessment {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(Constant.URL);
 	  }
-
   @AfterTest
   public void endSession() {
 	  driver.quit();
   }
-
-
 }

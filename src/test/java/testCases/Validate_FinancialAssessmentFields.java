@@ -2,15 +2,11 @@ package testCases;
 
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import pageObjects.FinancialAssessment_Page;
 import pageObjects.MainAccount_Menu;
 import pageObjects.Profile_Page;
@@ -19,21 +15,17 @@ import appModules.Login_Action;
 import appModules.SetFinancialAssessment_Action;
 
 public class Validate_FinancialAssessmentFields {
-	
-	public WebDriver driver;
-	
+	public WebDriver driver;	
 	  @Test(priority=0)
 	  public void Login() {
 		  	Login_Action.Execute(driver,Constant.Email,Constant.Password);
-	  }
-	  
+	  }  
 	  @Test(priority=1)
 	  public void NavigateToFinancialAssessmentPage() {
 		  	MainAccount_Menu.link_MainAccount(driver).click();
 			MainAccount_Menu.link_Profile(driver).click();
 			Profile_Page.link_FinancialAssessment(driver).click();
 	  }
-	  
 	  @Test(priority=2)
 	  public void Test_ForexTradingExperience() {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.select_value, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
@@ -67,7 +59,6 @@ public class Validate_FinancialAssessmentFields {
 				System.out.println("Field validation for forex trading frquency is working");
 			}
 	  }
-	  
 	  @Test(priority=5)
 	  public void Test_IndicesTradingFrequency() {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
@@ -78,7 +69,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_IndicesTradingFrequency(driver).isDisplayed()){
 				System.out.println("Field validation for Indices trading frequency is working");
 			}
-
 	  }
 	  @Test(priority=6)
 	  public void Test_CommoditiesTradingExperience() {
@@ -90,7 +80,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_CommoditiesTradingExperience(driver).isDisplayed()){
 				System.out.println("Field validation for Commodities trading experience is working");
 			}
-
 	  }
 	  @Test(priority=7)
 	  public void Test_CommoditiesTradingFrequency() {
@@ -102,7 +91,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_CommoditiesTradingFrequency(driver).isDisplayed()){
 				System.out.println("Field validation for Commodities trading frequency is working");
 			}
-
 	  }
 	  @Test(priority=8)
 	  public void Test_StocksTradingExperience() {
@@ -114,7 +102,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_StocksTradingExperience(driver).isDisplayed()){
 				System.out.println("Field validation for Stocks trading experience is working");
 			}
-
 	  }
 	  @Test(priority=9)
 	  public void Test_StocksTradingFrequency() {
@@ -159,7 +146,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_OtherDerivatiesTradingExperience(driver).isDisplayed()){
 				System.out.println("Field validation for Other financial instruments trading experience is working");
 			}
-
 	  }
 	  @Test(priority=13)
 	  public void Test_OtherDerivatiesTradingFrequency() {
@@ -171,7 +157,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_OtherDerivatiesTradingFrequency(driver).isDisplayed()){
 				System.out.println("Field validation for Other financial instruments trading frequency is working");
 			}
-
 	  }
 	  @Test(priority=14)
 	  public void Test_IndustryEmployment() {
@@ -194,7 +179,6 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_Occupation(driver).isDisplayed()){
 				System.out.println("Field validation for Occupation is working");
 			}
-
 	  }
 	  @Test(priority=16)
 	  public void Test_Education() {
@@ -206,20 +190,8 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_Education(driver).isDisplayed()){
 				System.out.println("Field validation for Education is working");
 			}
-
 	  }
 	  @Test(priority=17)
-	  public void Test_IncomeSource() {
-		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
-					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
-					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
-					Constant.other_derivative_trading_experience, Constant.other_derivative_trading_frequency, Constant.employment_industry, Constant.occupation,
-					Constant.education, Constant.select_value, Constant.annual_income, Constant.net_worth);
-			//if(FinancialAssessment_Page.error_IncomeSource(driver).isDisplayed()){
-				//System.out.println("Field validation for Source of Income is working");
-			//}
-	  }
-	  @Test(priority=18)
 	  public void Test_AnnualIncome() {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
@@ -229,9 +201,8 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_AnnualIncome(driver).isDisplayed()){
 				System.out.println("Field validation for Annual Income is working");
 			}
-
 	  }
-	  @Test(priority=19)
+	  @Test(priority=18)
 	  public void Test_NetWorth() {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
@@ -241,10 +212,7 @@ public class Validate_FinancialAssessmentFields {
 			if(FinancialAssessment_Page.error_NetWorth(driver).isDisplayed()){
 				System.out.println("Field validation for Net Worth is working");
 			}
-			
-
 	  }
-	  
 	  @BeforeTest
 	  public void launchApplication() {
 		  	ChromeDriverManager.getInstance().setup();
@@ -252,10 +220,8 @@ public class Validate_FinancialAssessmentFields {
 	    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(Constant.URL);
 	  }
-
 	  @AfterTest
 	  public void endSession() {
 		  driver.quit();
 	  }
-
 }

@@ -7,9 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Profile_Page {
-	
 	private static WebElement element = null;
-	
 	public static WebElement link_PersonalDetails(WebDriver driver)
 	{
 		WebDriverWait wait = new WebDriverWait(driver,10);
@@ -22,6 +20,5 @@ public class Profile_Page {
 		element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='settings_container']/div/div[2]/div[2]/h4/a")));
 		return element;
 	}
-
 }
 
