@@ -3,7 +3,7 @@ package utility;
 public class Constant {
 	public static final String URL = "https://staging.binary.com";
 	public static final String Email = "bijan+vi@binary.com";
-	public static final String Password = "Test1234";
+	public static final String Password = "est1234";
 	public static final String select_value = "";
 	public static final String fx_trading_exerience = "Over 3 years";
 	public static final String fx_trading_frequency = "40 transactions or more in the past 12 months";
