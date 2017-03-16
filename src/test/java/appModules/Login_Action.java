@@ -1,11 +1,12 @@
 package appModules;
 
 import org.openqa.selenium.WebDriver;
+
 import pageObjects.Home_Page;
 import pageObjects.Login_Page;
 
 public class Login_Action {
-	public static void Execute(WebDriver driver, String sEmail, String sPassword) {
+	public static void Execute(WebDriver driver, String sEmail, String sPassword) throws Exception {
 		Home_Page.btn_Login(driver).click();
 		Login_Page.txt_Email(driver).clear();
 		Login_Page.txt_Email(driver).sendKeys(sEmail);

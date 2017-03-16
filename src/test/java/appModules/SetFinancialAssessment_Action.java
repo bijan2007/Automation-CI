@@ -2,13 +2,14 @@ package appModules;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+
 import pageObjects.FinancialAssessment_Page;
 
 public class SetFinancialAssessment_Action {
 	
 	public static void Execute(WebDriver driver,String fx_trading_exerience,String fx_trading_frequency,String indices_trading_experience,String indices_trading_frequency,String commodities_trading_experience,String commodities_trading_frequency,
 			String stocks_trading_experience,String stocks_trading_frequency,String other_trading_experience,String other_trading_frequency,String other_derivative_trading_experience,String other_derivative_trading_frequency,
-			String employment_industry,String occupation,String education,String income_source,String annual_income,String net_worth) {
+			String employment_industry,String occupation,String education,String income_source,String annual_income,String net_worth) throws Exception {
 		Select oSelect_fx_trading_exerience = new Select(FinancialAssessment_Page.select_ForexTradingExperience(driver));
 		oSelect_fx_trading_exerience.selectByValue(fx_trading_exerience);
 		Select oSelect_fx_trading_frequency = new Select(FinancialAssessment_Page.select_ForexTradingFrequency(driver));

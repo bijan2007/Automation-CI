@@ -1,12 +1,16 @@
 package testCases;
 
 import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+
 import pageObjects.MainAccount_Menu;
 import pageObjects.FinancialAssessment_Page;
 import pageObjects.Profile_Page;
@@ -17,17 +21,17 @@ import appModules.SetFinancialAssessment_Action;
 public class Validate_SetFinancialAssessment {	
 	public WebDriver driver;
 	@Test
-	public void A_Login() {
+	public void A_Login() throws Exception {
 		  	Login_Action.Execute(driver,Constant.Email,Constant.Password);
 	}
 	@Test
-	  public void B_NavigateToFinancialAssessmentPage() {
+	  public void B_NavigateToFinancialAssessmentPage() throws Exception {
 		  	MainAccount_Menu.link_MainAccount(driver).click();
 			MainAccount_Menu.link_Profile(driver).click();
 			Profile_Page.link_FinancialAssessment(driver).click();
 	  }
 	 @Test
-	 public void C_Set_FinancialAssessment() {
+	 public void C_Set_FinancialAssessment() throws Exception {
 			SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 

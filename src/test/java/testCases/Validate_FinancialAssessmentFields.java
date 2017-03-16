@@ -1,12 +1,16 @@
 package testCases;
 
 import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+
 import pageObjects.FinancialAssessment_Page;
 import pageObjects.MainAccount_Menu;
 import pageObjects.Profile_Page;
@@ -17,17 +21,17 @@ import appModules.SetFinancialAssessment_Action;
 public class Validate_FinancialAssessmentFields {
 	public WebDriver driver;	
 	  @Test(priority=0)
-	  public void Login() {
+	  public void Login() throws Exception {
 		  	Login_Action.Execute(driver,Constant.Email,Constant.Password);
 	  }  
 	  @Test(priority=1)
-	  public void NavigateToFinancialAssessmentPage() {
+	  public void NavigateToFinancialAssessmentPage() throws Exception {
 		  	MainAccount_Menu.link_MainAccount(driver).click();
 			MainAccount_Menu.link_Profile(driver).click();
 			Profile_Page.link_FinancialAssessment(driver).click();
 	  }
 	  @Test(priority=2)
-	  public void Test_ForexTradingExperience() {
+	  public void Test_ForexTradingExperience() throws Exception {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.select_value, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -38,7 +42,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=3)
-	  public void Test_ForexTradingFrequency() {
+	  public void Test_ForexTradingFrequency() throws Exception {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.select_value, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -49,7 +53,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=4)
-	  public void Test_IndicesTradingExperience() {
+	  public void Test_IndicesTradingExperience() throws Exception {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.select_value, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -60,7 +64,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=5)
-	  public void Test_IndicesTradingFrequency() {
+	  public void Test_IndicesTradingFrequency() throws Exception {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.select_value, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -71,7 +75,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=6)
-	  public void Test_CommoditiesTradingExperience() {
+	  public void Test_CommoditiesTradingExperience() throws Exception {
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.select_value, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -82,7 +86,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=7)
-	  public void Test_CommoditiesTradingFrequency() {
+	  public void Test_CommoditiesTradingFrequency() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.select_value, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -93,7 +97,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=8)
-	  public void Test_StocksTradingExperience() {
+	  public void Test_StocksTradingExperience() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.select_value, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -104,7 +108,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=9)
-	  public void Test_StocksTradingFrequency() {
+	  public void Test_StocksTradingFrequency() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.select_value, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -115,7 +119,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=10)
-	  public void Test_OtherTradingExperience() {
+	  public void Test_OtherTradingExperience() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.select_value, Constant.other_trading_frequency, 
@@ -126,7 +130,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=11)
-	  public void Test_OtherTradingFrequency() {
+	  public void Test_OtherTradingFrequency() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.select_value, 
@@ -137,7 +141,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=12)
-	  public void Test_OtherDerivatiesTradingExperience() {
+	  public void Test_OtherDerivatiesTradingExperience() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -148,7 +152,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=13)
-	  public void Test_OtherDerivatiesTradingFrequency() {
+	  public void Test_OtherDerivatiesTradingFrequency() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -159,7 +163,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=14)
-	  public void Test_IndustryEmployment() {
+	  public void Test_IndustryEmployment() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -170,7 +174,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=15)
-	  public void Test_Occupation() {
+	  public void Test_Occupation() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -181,7 +185,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=16)
-	  public void Test_Education() {
+	  public void Test_Education() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -192,7 +196,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=17)
-	  public void Test_AnnualIncome() {
+	  public void Test_AnnualIncome() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
@@ -203,7 +207,7 @@ public class Validate_FinancialAssessmentFields {
 			}
 	  }
 	  @Test(priority=18)
-	  public void Test_NetWorth() {
+	  public void Test_NetWorth() throws Exception{
 		  SetFinancialAssessment_Action.Execute(driver, Constant.fx_trading_exerience, Constant.fx_trading_frequency, Constant.indices_trading_experience, 
 					Constant.indices_trading_frequency, Constant.commodities_trading_experience, Constant.commodities_trading_frequency, 
 					Constant.stocks_trading_experience, Constant.stocks_trading_frequency, Constant.other_trading_experience, Constant.other_trading_frequency, 
