@@ -19,7 +19,8 @@ import appModules.Login_Action;
 import appModules.SetFinancialAssessment_Action;
 
 public class Validate_FinancialAssessmentFields {
-	public WebDriver driver;	
+	public WebDriver driver;
+	
 	  @Test(priority=0)
 	  public void Login() throws Exception {
 		  	Login_Action.Execute(driver,Constant.Email,Constant.Password);

@@ -1,6 +1,7 @@
 package testCases;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
@@ -31,7 +32,6 @@ public WebDriver driver;
   @Test
   public void A_Launch(){
 	  driver.get(Constant.URL); 
-	  System.out.println("Page title is: " + driver.getTitle());
   }
   @Test
   public void B_Login() throws Exception {
@@ -40,7 +40,7 @@ public WebDriver driver;
   @Test
   public void C_Logout() throws Exception {
 		Logout_Action.Execute(driver);
-		AssertJUnit.assertTrue(Home_Page.btn_Login(driver).isDisplayed());
+		Assert.assertTrue(Home_Page.btn_Login(driver).isDisplayed());
   }
   @AfterTest
   public void endSession() {
