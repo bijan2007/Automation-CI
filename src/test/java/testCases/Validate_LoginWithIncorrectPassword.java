@@ -1,7 +1,7 @@
 package testCases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 
@@ -25,10 +25,10 @@ public class Validate_LoginWithIncorrectPassword {
 	  }
 	  @Test
 	  public void B_Validate_Message() throws Exception {
-		  AssertJUnit.assertTrue(Login_Page.err_Login(driver).isDisplayed());
+		  Assert.assertTrue(Login_Page.err_Login(driver).isDisplayed());
 		  if(Login_Page.err_Login(driver).isDisplayed()){
 			  System.out.println(Login_Page.err_Login(driver).getText());
-			  AssertJUnit.assertEquals("Incorrect email or password.",Login_Page.err_Login(driver).getText());
+			  Assert.assertEquals("Incorrect email or password.",Login_Page.err_Login(driver).getText());
 		  }
 	  }
 	  @BeforeTest

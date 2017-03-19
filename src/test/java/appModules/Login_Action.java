@@ -8,7 +8,6 @@ import pageObjects.Login_Page;
 
 public class Login_Action {
 	public static void Execute(WebDriver driver, String sEmail, String sPassword) throws Exception {
-		Assert.assertTrue(driver.getTitle().matches("Online Trading Platform.*"));
 		Home_Page.btn_Login(driver).click();
 		Login_Page.txt_Email(driver).clear();
 		Login_Page.txt_Email(driver).sendKeys(sEmail);
