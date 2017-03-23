@@ -34,10 +34,6 @@
 						<!-- TestNG suite XML files -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<parallel>methods</parallel>
-					<useUnlimitedThreads>true</useUnlimitedThreads>
-                   <threadCount>80</threadCount>
-                  <perCoreThreadCount>true</perCoreThreadCount>
 				</configuration>
   		</plugin>
   	</plugins>
