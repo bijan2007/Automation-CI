@@ -9,6 +9,10 @@ addons:
     packages:
       - google-chrome-stable
       
+cache:
+  directories:
+  - $HOME/.m2
+      
 script: mvn test -B
 
 before_install:
